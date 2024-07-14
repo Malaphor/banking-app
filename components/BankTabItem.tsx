@@ -15,7 +15,9 @@ export const BankTabItem = ({ account, appwriteItemId }: BankTabItemProps) => {
       key: "id",
       value: account?.appwriteItemId,
     });
-    router.push(newUrl, { scroll: false });
+    //if one account has fewer pages could be blank when switch to other account
+    const newerUrl = newUrl.substring(0, newUrl.length - 1) + "1";
+    router.push(newerUrl, { scroll: false });
   };
 
   return (
