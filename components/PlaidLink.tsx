@@ -82,6 +82,12 @@ const PlaidLink = ({ user, variant }: PlaidLinkProps) => {
           <p className="text-[16px] font-semibold text-black-2">Connect Bank</p>
         </Button>
       )}
+      <p className="text-gray-600">
+        For demonstration purposes you can use a sandbox account by connecting
+        to any bank using the following credentials: username: "user_good" and
+        password: "pass_good". Then choose any account (ex. checking) and
+        continue through the connecting proccess.
+      </p>
     </>
   );
 };
